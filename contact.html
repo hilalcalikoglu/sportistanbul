@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportIstanbul Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>SportIstanbul</h2>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sessions.html">Find a Session</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-title contact-title">
+  <h1>Contact Us</h1>
+  <p>Ask a question or suggest a new sport and location.</p>
+</section>
+
+<section class="contact-section">
+
+  <div class="contact-info">
+    <h2>SportIstanbul Istanbul</h2>
+    <p>
+      Our aim is to help people become more active and social by finding
+      local sports sessions around Istanbul.
+    </p>
+
+    <p><strong>Email:</strong> info@sportistanbul.com</p>
+    <p><strong>Location:</strong> Burhan Felek Sports Complex, Uskudar</p>
+    <p><strong>Working Hours:</strong> 09:00 - 22:00</p>
+
+    <iframe
+      class="map"
+      src="https://www.google.com/maps?q=Burhan%20Felek%20Sports%20Complex%20Uskudar&output=embed"
+      loading="lazy"
+      title="Burhan Felek Sports Complex map">
+    </iframe>
+  </div>
+
+  <form id="contactForm" onsubmit="return validateForm()">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="subject">Subject</label>
+    <select id="subject" required>
+      <option value="">Choose a subject</option>
+      <option value="booking">Booking Question</option>
+      <option value="sport">Suggest a Sport</option>
+      <option value="location">Suggest a Location</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="6" required></textarea>
+
+    <p id="errorMessage"></p>
+    <button type="submit">Send Message</button>
+  </form>
+
+</section>
+
+<footer>
+  <h3>SportIstanbul</h3>
+  <p>Play sports. Meet people. Stay active.</p>
+  <p>Hilal Calikoglu © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportIstanbul Sessions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>SportIstanbul</h2>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sessions.html">Find a Session</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-title sessions-title">
+  <h1>Find a Session</h1>
+  <p>Choose a sport to see available sessions in Istanbul.</p>
+</section>
+
+<section class="filter-area">
+  <label for="sportFilter">Choose a sport:</label>
+
+  <select id="sportFilter" onchange="filterSessions()">
+    <option value="all">All Sports</option>
+    <option value="volleyball">Volleyball</option>
+    <option value="basketball">Basketball</option>
+    <option value="football">Football</option>
+    <option value="tennis">Tennis</option>
+    <option value="badminton">Badminton</option>
+    <option value="padel">Padel</option>
+    <option value="running">Running</option>
+    <option value="yoga">Yoga</option>
+  </select>
+</section>
+
+<section class="session-grid">
+
+  <div class="session-card volleyball">
+    <img src="images/volleyball.jpg" alt="Volleyball">
+    <div>
+      <h2>Indoor Volleyball</h2>
+      <p><strong>Location:</strong> Kadikoy</p>
+      <p><strong>Day:</strong> Thursday, 19:00</p>
+      <p><strong>Level:</strong> Intermediate</p>
+      <p><strong>Price:</strong> 250 TL</p>
+      <button onclick="bookSession('Indoor Volleyball in Kadikoy')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="session-card basketball">
+    <img src="images/basketball.jpg" alt="Basketball">
+    <div>
+      <h2>Social Basketball</h2>
+      <p><strong>Location:</strong> Levent</p>
+      <p><strong>Day:</strong> Sunday, 18:00</p>
+      <p><strong>Level:</strong> All Levels</p>
+      <p><strong>Price:</strong> 200 TL</p>
+      <button onclick="bookSession('Social Basketball in Levent')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="session-card football">
+    <img src="images/football.jpg" alt="Football">
+    <div>
+      <h2>Five-a-Side Football</h2>
+      <p><strong>Location:</strong> Besiktas</p>
+      <p><strong>Day:</strong> Friday, 20:00</p>
+      <p><strong>Level:</strong> Intermediate</p>
+      <p><strong>Price:</strong> 250 TL</p>
+      <button onclick="bookSession('Football in Besiktas')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="session-card tennis">
+    <img src="images/tennis.jpg" alt="Tennis">
+    <div>
+      <h2>Beginner Tennis</h2>
+      <p><strong>Location:</strong> Bakirkoy</p>
+      <p><strong>Day:</strong> Saturday, 13:00</p>
+      <p><strong>Level:</strong> Beginner</p>
+      <p><strong>Price:</strong> 300 TL</p>
+      <button onclick="bookSession('Tennis in Bakirkoy')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="session-card badminton">
+    <img src="images/badminton.jpg" alt="Badminton">
+    <div>
+      <h2>Badminton Evening</h2>
+      <p><strong>Location:</strong> Uskudar</p>
+      <p><strong>Day:</strong> Wednesday, 19:30</p>
+      <p><strong>Level:</strong> All Levels</p>
+      <p><strong>Price:</strong> 180 TL</p>
+      <button onclick="bookSession('Badminton in Uskudar')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="session-card padel">
+    <img src="images/padel.jpg" alt="Padel">
+    <div>
+      <h2>Social Padel</h2>
+      <p><strong>Location:</strong> Sariyer</p>
+      <p><strong>Day:</strong> Saturday, 16:00</p>
+      <p><strong>Level:</strong> Beginner</p>
+      <p><strong>Price:</strong> 350 TL</p>
+      <button onclick="bookSession('Padel in Sariyer')">Book Now</button>
+    </div>
+  </div>
+
+  <div class="session-card running">
+    <img src="images/running.jpg" alt="Running">
+    <div>
+      <h2>Bosphorus Running Group</h2>
+      <p><strong>Location:</strong> Bebek</p>
+      <p><strong>Day:</strong> Sunday, 09:00</p>
+      <p><strong>Level:</strong> All Levels</p>
+      <p><strong>Price:</strong> Free</p>
+      <button onclick="bookSession('Running Group in Bebek')">Join Now</button>
+    </div>
+  </div>
+
+  <div class="session-card yoga">
+    <img src="images/yoga.jpg" alt="Yoga">
+    <div>
+      <h2>Morning Yoga</h2>
+      <p><strong>Location:</strong> Macka Park</p>
+      <p><strong>Day:</strong> Saturday, 10:00</p>
+      <p><strong>Level:</strong> Beginner</p>
+      <p><strong>Price:</strong> 200 TL</p>
+      <button onclick="bookSession('Yoga in Macka Park')">Book Now</button>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <h3>SportIstanbul</h3>
+  <p>Play sports. Meet people. Stay active.</p>
+  <p>Hilal Calikoglu © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
